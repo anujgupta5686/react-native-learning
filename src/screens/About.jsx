@@ -1,28 +1,34 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
 
-export default function Home() {
+export default function About() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Welcome to Home Screen</Text>
+      <Text style={styles.title}>About Us</Text>
+
       <View style={styles.section}>
         <Text style={styles.content}>
-          Explore our app and enjoy its amazing features. This application is
-          designed to provide you with a smooth experience while browsing
-          content.
+          We are committed to providing high-quality and user-friendly
+          applications to enhance your daily life. Our mission is to deliver
+          innovative solutions that meet your needs.
         </Text>
       </View>
+
       <View style={styles.section}>
-        <Text style={styles.subtitle}>Amazing Features</Text>
+        <Text style={styles.subtitle}>Our Vision</Text>
         <Text style={styles.content}>
-          - Easy navigation
-          {'\n'}- Beautiful UI design
-          {'\n'}- Smooth performance
+          To become the leading provider of solutions that empower users and
+          help them achieve their goals in the most efficient way possible.
         </Text>
       </View>
+
       <View style={styles.section}>
-        <Text style={styles.subtitle}>Get Started</Text>
-        <Text style={styles.content}>Sign up today and begin exploring!</Text>
+        <Text style={styles.subtitle}>Our Values</Text>
+        <Text style={styles.content}>
+          - Innovation
+          {'\n'}- Quality
+          {'\n'}- Customer Satisfaction
+        </Text>
       </View>
     </ScrollView>
   );
@@ -33,13 +39,13 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#4A90E2', // Solid background color
+    backgroundColor: '#f8f8f8', // Light gray background
     padding: 20,
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#1E90FF',
     marginBottom: 20,
     textAlign: 'center',
   },
@@ -64,7 +70,7 @@ const styles = StyleSheet.create({
   content: {
     fontSize: 16,
     color: '#444',
-    textAlign: 'left',
+    textAlign: 'justify',
     lineHeight: 24,
   },
 });

@@ -1,28 +1,31 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
 
-export default function Home() {
+export default function Contact() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Welcome to Home Screen</Text>
+      <Text style={styles.title}>Contact Us</Text>
+
       <View style={styles.section}>
         <Text style={styles.content}>
-          Explore our app and enjoy its amazing features. This application is
-          designed to provide you with a smooth experience while browsing
-          content.
+          If you have any questions or feedback, feel free to reach out to us
+          at:
         </Text>
+        <Text style={styles.email}>abcd@example.com</Text>
       </View>
+
       <View style={styles.section}>
-        <Text style={styles.subtitle}>Amazing Features</Text>
+        <Text style={styles.subtitle}>Dummy Address</Text>
+        <Text style={styles.content}>1234 Street Name, City, Country</Text>
+      </View>
+
+      <View style={styles.section}>
+        <Text style={styles.subtitle}>Follow Us</Text>
         <Text style={styles.content}>
-          - Easy navigation
-          {'\n'}- Beautiful UI design
-          {'\n'}- Smooth performance
+          Stay connected with us on social media:
+          {'\n'}- Linkedin: @example
+          {'\n'}- Twitter: @example
         </Text>
-      </View>
-      <View style={styles.section}>
-        <Text style={styles.subtitle}>Get Started</Text>
-        <Text style={styles.content}>Sign up today and begin exploring!</Text>
       </View>
     </ScrollView>
   );
@@ -33,7 +36,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#4A90E2', // Solid background color
+    backgroundColor: '#4A90E2',
     padding: 20,
   },
   title: {
@@ -66,5 +69,10 @@ const styles = StyleSheet.create({
     color: '#444',
     textAlign: 'left',
     lineHeight: 24,
+  },
+  email: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#007bff',
   },
 });
